@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Georama;
+    src: url(Asset/font/Georama-VariableFont_wdth\,wght.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georama;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+}
+  
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 450px;
+    box-shadow: rgba(2, 2, 2, 0.15) 0px 6.5px 15px;
+    padding: 30px;
+    border-radius: 12.5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    gap: 25px;
+}
+  
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #cfd4d157;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+    text-align: center;
+    padding: 8px;
+    font-weight: 300;
+    height: 40px;
+    width: 100%;
+    letter-spacing: 1px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        height: 35px;
+    }
+}
